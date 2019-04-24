@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import './setup/variable';
+@import './setup/utility';
+@import './setup/button';
+@import './page/navigation';
+@import './page/showcase';
+@import './page/about';
+@import './page/footer';
+@import './page/work';
+@import './page/contact';
+// Global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+@import './media';

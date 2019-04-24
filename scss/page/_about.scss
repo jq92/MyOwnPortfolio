@@ -1,0 +1,68 @@
+// about me
+#about {
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'img text'
+    'img skills';
+  background-color: $secondary-color;
+  justify-content: center;
+
+  .about-img {
+    border-right: 1px solid $primary-color;
+    grid-area: img;
+    padding-top: 100px;
+    img {
+      border-radius: 50%;
+      max-height: 80%;
+      display: block;
+      margin: 0 auto;
+      border: 2px dotted $primary-color;
+    }
+  }
+
+  .about-text {
+    grid-area: text;
+
+    .intro {
+      text-align: justify;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: black;
+    }
+    border-bottom: 1px solid $primary-color;
+  }
+
+  .about-skills {
+    grid-area: skills;
+    text-align: center;
+
+    .icon {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      color: $primary-color;
+    }
+  }
+
+  .about-quote {
+    grid-area: quote;
+    height: auto;
+    background: url('../img/about.jpg') no-repeat center center/cover;
+
+    background-position: 50% 70%;
+  }
+
+  .about-part {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 60px;
+
+    border-right: 1px solid $primary-color;
+
+    &:nth-last-child(1) {
+      border-right: none;
+    }
+  }
+}

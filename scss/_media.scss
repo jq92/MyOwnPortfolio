@@ -1,0 +1,195 @@
+@media (max-width: 840px) {
+  // Navigation Bar
+  #main-header {
+    display: block;
+    justify-content: space-between;
+
+    .logo {
+      margin-left: 0px;
+      float: left;
+    }
+
+    .bar {
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      float: right;
+      cursor: pointer;
+      text-align: center;
+      color: $primary-color;
+    }
+
+    .bar:before {
+      content: '\f0c9';
+      font-family: fontAwesome;
+      line-height: 40px;
+      font-size: 30px;
+    }
+
+    .bar.active:before {
+      content: '\f00d';
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .navbar {
+      display: none;
+    }
+
+    .navbar.active {
+      display: block;
+      width: 100%;
+
+      ul {
+        display: block;
+
+        li {
+          margin: 5px;
+
+          a {
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  // showcase background
+  video {
+    display: none;
+  }
+
+  #showcase {
+    background: url('../img/showcase.png') no-repeat center center/cover;
+
+    .showcase-content {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  // about me
+  #about {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .about-img {
+      border-right: 0px;
+      img {
+        display: none;
+      }
+    }
+
+    .about-text {
+      border-bottom: 0px;
+    }
+
+    .about-skills {
+      border-left: 1px solid $primary-color;
+      padding: 2rem 1rem;
+    }
+  }
+
+  // work
+  #work {
+    .row {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      .box9 {
+        .icon,
+        .title {
+          font-size: 18px;
+        }
+
+        .title {
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  // footer
+  #main-footer {
+    text-align: center;
+
+    .footer-content {
+      display: block;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  // about me
+  #about {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    flex-direction: column;
+
+    .about-img {
+      display: none;
+    }
+
+    .about-text {
+      border-bottom: 1px solid $primary-color;
+      text-align: center;
+    }
+
+    .about-skills {
+      border-left: 0px;
+    }
+  }
+
+  // work
+  #work {
+    .row {
+      grid-gap: 10px;
+      .box9 {
+        .icon,
+        .title {
+          font-size: 12px;
+        }
+
+        .title {
+          line-height: 20px;
+        }
+
+        .icon li {
+          padding: 0px;
+          margin-bottom: 10px;
+          a {
+            width: 55px;
+            height: 32px;
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  // Contact
+  #contact {
+    .text-fields {
+      margin: 0px 10px;
+      display: grid;
+      grid-template-areas:
+        'name'
+        'email'
+        'subject'
+        'message';
+      margin-bottom: 1.2rem;
+    }
+
+    button[type='submit'] {
+      width: 90%;
+      height: 40px;
+    }
+  }
+}

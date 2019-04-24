@@ -1,0 +1,70 @@
+#main-header {
+  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main-header .logo {
+  margin-left: 0px;
+  float: left;
+}
+
+#main-header .bar {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  float: right;
+  cursor: pointer;
+  text-align: center;
+  color: #069370;
+}
+
+#main-header .bar:before {
+  content: '\f0c9';
+  font-family: fontAwesome;
+  line-height: 40px;
+  font-size: 30px;
+}
+
+#main-header .bar.active:before {
+  content: '\f00d';
+}
+
+#main-header .clear {
+  clear: both;
+}
+
+#main-header .navbar {
+  display: none;
+}
+
+#main-header .navbar.active {
+  display: block;
+  width: 100%;
+}
+
+#main-header .navbar.active ul {
+  display: block;
+}
+
+#main-header .navbar.active ul li {
+  margin: 5px;
+}
+
+#main-header .navbar.active ul li a {
+  padding: 0.5rem;
+}
+
+video {
+  display: none;
+}
+
+#showcase {
+  background: url("../img/showcase.png") no-repeat center center/cover;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 3rem;
+}
+/*# sourceMappingURL=mobile.css.map */

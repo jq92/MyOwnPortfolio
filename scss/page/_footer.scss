@@ -1,0 +1,28 @@
+#main-footer {
+  background: $primary-color;
+  color: #fff;
+  height: 100%;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+
+    .social .fab,
+    .social .fas {
+      margin-right: 1rem;
+      border: 2px white solid;
+      padding: 0.5rem;
+      border-radius: 50%;
+      text-align: center;
+      color: $secondary-color;
+
+      &:hover {
+        background-color: $secondary-color;
+        color: $primary-color;
+        cursor: pointer;
+      }
+    }
+  }
+}

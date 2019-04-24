@@ -1,0 +1,38 @@
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  @extend %btn-shared;
+  background: transparent;
+  color: $primary-color;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: 2px solid $primary-color;
+
+  &:hover {
+    background: $primary-color;
+    color: $secondary-color;
+    transition: 0.5s;
+  }
+}
+
+.btn-secondary {
+  @extend %btn-shared;
+  background: transparent;
+  color: $secondary-color;
+  border: 2px solid $secondary-color;
+  border-radius: 20px;
+  padding: 5px 10px;
+
+  &:hover {
+    background: $secondary-color;
+    color: $primary-color;
+    transition: 0.5s;
+  }
+}

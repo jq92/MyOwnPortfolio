@@ -1,0 +1,111 @@
+#work {
+  background-color: $primary-color;
+  height: 100%;
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    color: $primary-color;
+
+    .box9 {
+      width: 70%;
+      text-align: center;
+      position: relative;
+      padding: 2px;
+      margin: 0 auto;
+
+      .box-content,
+      img,
+      .icon li {
+        transition: all 0.35s ease 0s;
+      }
+
+      .icon,
+      .title {
+        width: 100%;
+        font-size: 22px;
+      }
+
+      .title {
+        color: #fff;
+        line-height: 17px;
+        margin: 5px 0;
+        position: absolute;
+        bottom: 55%;
+      }
+
+      .icon {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+
+        :hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+.box9 .box-content {
+  padding: 30px 10px 30px 0px;
+  background: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+.box9:hover .box-content {
+  top: 10px;
+  left: 10px;
+  bottom: 15px;
+  right: 10px;
+  opacity: 1;
+}
+
+.box9 .icon li a {
+  line-height: 38px;
+  border-radius: 15%;
+}
+
+.box9 .icon li {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(40px);
+  padding: 20px;
+}
+.box9:hover .icon li {
+  opacity: 1;
+  transform: translateY(0);
+}
+.box9:hover .icon li:first-child {
+  transition-delay: 0.1s;
+}
+.box9:hover .icon li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.box9 .icon li a {
+  display: inline-block;
+  width: 100px;
+  height: 38px;
+  background: transparent;
+  font-size: 15px;
+  color: $secondary-color;
+  margin-right: 5px;
+  transition: all 0.35s ease 0s;
+  -webkit-transition: all 0.35s ease 0s;
+  border: 2px solid $secondary-color;
+
+  &:hover {
+    background: $secondary-color;
+    color: $primary-color;
+  }
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="css/mobile.css"
+    />
+    <title>Nicolas Lau | Welcome To My Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header id="main-header">
+      <a href="#showcase"
+        ><h1 class="logo"><span class="text-primary">N</span>.L</h1></a
+      >
+      <div class="bar"></div>
+      <div class="clear"></div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="#showcase" onclick="closeNav()">Home</a>
+          </li>
+          <li><a href="#about" onclick="closeNav()">About</a></li>
+          <li><a href="#work" onclick="closeNav()">Works</a></li>
+          <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Showcase -->
+    <section id="showcase">
+      <div class="showcase-content container">
+        <video autoplay muted loop>
+          <source src="./video/showcase.mp4" type="video/mp4" />
+        </video>
+        <h1 class="l-heading">I <span class="effect"></span>AM NICOLAS LAU</h1>
+        <p class="lead">
+          A
+          <span
+            class="txt-type"
+            data-wait="2000"
+            data-words='["Front-End Developer","Web Designer"]'
+          ></span>
+          <br />
+          <br />
+          <a href="#work" class="btn-secondary">View Works</a>
+          <div class="social">
+              <a href="https://www.linkedin.com/in/nicolas-jia-quan-a498b9136/" target="_blank"><i class="fab fa-linkedin fa-2x"></i> </a> 
+              <a href="https://github.com/jq92" target="_blank" ><i class="fab fa-github fa-2x" ></i> </a> 
+              <a href="https://www.freecodecamp.org/nicolas(jq)" target="_blank"><i class="fab fa-free-code-camp fa-2x"></i> </a> 
+              <a href="mailto: jqnicolasAtW@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i> </a> 
+            </div>
+        </p>
+      </div>
+    </section>
+    <!-- About Me -->
+    <section id="about">
+      
+      <div class="about-img">
+        <img src="./img/profile.png" alt="profile pic" />
+      </div>
+      <div class="about-text p-2">
+        <h2 class="m-heading"><span class="text-primary">About</span> Me</h2>
+        <p class="intro">
+          Hey there! My name is Nicolas. I'm a self-learn front-end developer
+          based in Malaysia that focused on crafting great web experiences. I
+          started my journey web design/development since 2019. I enjoy creating
+          beautifully designed, intuitive and functional websites.
+        </p>
+        <br>
+           
+      </div>
+   
+      <div class="about-skills ">
+          <h2 class="m-heading"><span class="text-dark">Skills</h2>
+          <div class="icon">
+          <i class="fab fa-html5 fa-4x"></i>
+          <i class="fab fa-css3-alt fa-4x"></i>
+          <i class="fab fa-js-square fa-4x"></i>
+          <i class="fab fa-vuejs fa-4x"></i>
+          <i class="fab fa-sass fa-4x"></i>
+          <i class="fab fa-github fa-4x"></i>
+        </div>
+      </div> 
+    </div>
+    </section>
+
+    <!-- My Works -->
+    <section class="py-3" id="work">
+        <div>
+          <p class="m-heading text-secondary text-center">My Works</p>
+          <div class="row">         
+           
+              <div class="box9">
+                <img src="img/portfolio1.png" alt="portfolio" />
+                <div class="box-content">
+                  <h3 class="title">Word Translator App built by Vuejs</h3>
+                  <ul class="icon">
+                    <li><a href="https://vuejswordtranslator.netlify.com/" target="_blank" class="demo">DEMO</a></li>
+                    <li><a href="https://github.com/jq92/VuejsWordTranslator" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            <div >
+              <div class="box9">
+                <img src="img/portfolio2.png" alt="portfolio"  />
+                <div class="box-content">
+                  <h3 class="title">Responsive Portfolio Website built by HTML and SCSS</h3>
+                  <ul class="icon">
+                      <li><a href="https://portfoliowebpagebynl.netlify.com/index.html" target="_blank">DEMO</i></a></li>
+                      <li><a href="https://github.com/jq92/portfolioWebsite" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div >
+              <div class="box9">
+                <img src="img/portfolio3.png" alt="portfolio" />
+                <div class="box-content">
+                  <h3 class="title">Memory Game built by Javascript</h3>
+                  <ul class="icon">
+                      <li><a href="https://memorygamenl.netlify.com/" target="_blank">DEMO</i></a></li>
+                      <li><a href="https://github.com/jq92/memoryGame" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div >
+              <div class="box9">
+                <img src="img/portfolio4.png" alt="portfolio" />
+                <div class="box-content">
+                  <h3 class="title">Meetup App built by Vuejs,Vuetify and Firebase</h3>
+                  <ul class="icon">
+                      <li><a href="https://vuemeetup.netlify.com/" target="_blank">DEMO</i></a></li>
+                      <li><a href="https://github.com/jq92/VuejsMeetUpCode" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Contact Me -->
+    <section id="contact" class="text-center py-1">
+        <div class="container">
+          <h2 class="m-heading">Contact<span class="text-primary"> Me</span></h2>
+          
+          <form action="">
+            <div class="text-fields">
+              <input
+                type="text"
+                class="text-input name-input"
+                placeholder="Name"
+              />
+              <input
+                type="text"
+                class="text-input subject-input"
+                placeholder="Subject"
+              />
+              <input
+                type="email"
+                class="text-input email-input"
+                placeholder="Email"
+              />
+            
+              <textarea
+                class="text-input message-input"
+                placeholder="Enter Message" 
+              ></textarea>
+            </div>
+            <button class="btn-primary" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    <!-- footer -->
+    <footer id="main-footer">
+        <div class="footer-content container">  
+          <p class="hide">Built By Nicolas Lau</p>
+          <p>Copyright &copy; 2019. ALL RIGHT RESERVED</p>
+          <div class="social">
+              <a href="https://www.linkedin.com/in/nicolas-jia-quan-a498b9136/" target="_blank"><i class="fab fa-linkedin fa-2x"></i> </a> 
+              <a href="https://github.com/jq92" target="_blank"><i class="fab fa-github fa-2x" ></i> </a> 
+              <a href="https://www.freecodecamp.org/nicolas(jq)" target="_blank"><i class="fab fa-free-code-camp fa-2x"></i> </a> 
+              <a href="mailto: jqnicolasAtW@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i> </a> 
+          </div>
+        </div>
+      </footer>
+      <!-- javascript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/dist/js/main.js"></script>
+    <!-- this is where the text feature applied -->
+    <script src="/dist/js/typewriter.js"></script>
+  </body>
+</html>
